@@ -17,6 +17,10 @@ Meal.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
+        filename: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         description: {
             type: DataTypes.STRING,
         },
