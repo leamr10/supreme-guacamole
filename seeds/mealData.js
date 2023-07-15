@@ -72,6 +72,57 @@ const mealdata = [
     menu_id: 3,
     filename: 'mamas-lasagna.jpg',
     description: "Lasagna so good it'll make you feel young again! Served with a side salad.",
+  },
+  {
+    id: 10,
+    name: 'Water',
+    price: 0,
+    menu_id: 4,
+    filename: 'water.jpg',
+  },
+  {
+    id: 11,
+    name: 'Coca-Cola',
+    price: 2,
+    menu_id: 4,
+    filename:'coca-cola.jpg',
+  },
+  {
+    id: 12,
+    name: 'Sprite',
+    price: 2,
+    menu_id: 4,
+    filename: 'sprite.jpg',
+  },
+  {
+    id: 13,
+    name: 'Coffee',
+    price: 4.50,
+    menu_id: 4,
+    filename: 'coffee.jpg',
+  },
+  {
+    id: 14,
+    name: 'Sweet Tea',
+    price: 3.50,
+    menu_id: 4,
+    filename: 'sweet-tea.jpg',
+  },
+  {
+    id: 15,
+    name: 'Hot Fudge Cookie Sundae',
+    price: 7.50,
+    menu_id: 5,
+    filename: 'hot-fudge-cookie-sundae.jpg',
+    description: 'Vanilla ice cream with hot fudge drizzled atop pecans, a chocolate chip cookie and topped off with a cherry!', 
+  },
+  {
+    id: 16,
+    name: 'Apple Pie',
+    price: 7,
+    menu_id: 5,
+    filename: 'apple-pie.jpg',
+    description: 'A warm slice of apple pie with a scoop of vanilla ice cream to finish off your meal!'
   }
 
 ];
