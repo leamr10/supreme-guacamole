@@ -122,7 +122,7 @@ const mealdata = [
     price: 7,
     menu_id: 5,
     filename: 'apple-pie.jpg',
-    description: 'A warm slice of apple pie with a scoop of vanilla ice cream to finish off your meal!'
+    description: 'A warm slice of apple pie with a scoop of vanilla ice cream to finish off your meal!',
   }
 
 ];

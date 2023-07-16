@@ -28,6 +28,12 @@ Meal.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
+    },
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'meal',
     }
 );
 module.exports = Meal;
