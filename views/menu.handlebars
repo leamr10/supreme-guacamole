@@ -1,0 +1,9 @@
+<section class="container">
+  <h3 class="menu-name">{{menu.name}}</h3>
+  <h4>Offered: {{menu.time_offered}}</h4>
+  <section class="flex-row justify-center">
+    {{#each menu.meal as |meal|}}
+    {{> meal-details}}
+    {{/each}}
+  </section>
+</section>
