@@ -7,6 +7,8 @@ Menu.init(
     {
         id: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true,
             allowNull: false
         },
         menu_id: {
