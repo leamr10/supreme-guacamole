@@ -6,7 +6,7 @@ const mealdata = [
     name: 'The Classic',
     price: 7.50,
     menu_id: 1,
-    filename: 'the=classic.jpg',
+    filename: 'the-classic.jpg',
     description: 'Two eggs of your preferred style, a choice of bacon or sausage, as well as a choice of four pancakes or waffles.',
   },
   {
@@ -54,7 +54,7 @@ const mealdata = [
     name: 'The Steak and Potatoes',
     price: 23.00,
     menu_id: 3,
-    filename: 'steak-and=potatoes.jpeg',
+    filename: 'steak-and-potatoes.jpeg',
     description: "A beef steak served with a loaded baked potato and your choice of side salad or soup.",
   },
   {

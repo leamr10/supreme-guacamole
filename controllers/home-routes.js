@@ -85,8 +85,8 @@ router.post('/seed', (req, res) => {
     });
 });
 
-// Updates meal based on its name
-router.put('/:name', (req, res) => {
+// Updates meal based on its id
+router.put('/menu/:id', (req, res) => {
   // Calls the update method on the Book model
   Meal.update(
     {
@@ -97,9 +97,9 @@ router.put('/:name', (req, res) => {
       price: req.body.price,
     },
     {
-      // Gets the meal based on the name given in the request parameters
+      // Gets the meal based on the id given in the request parameters
       where: {
-        name: req.params.name,
+        id: req.params.id,
       },
     }
   )
@@ -110,11 +110,11 @@ router.put('/:name', (req, res) => {
     .catch((err) => res.json(err));
 });
 
-router.delete('/:name', (req, res) => {
-  // Looks for the books based on isbn given in the request parameters and deletes the instance from the database
+router.delete('/menu/:id', (req, res) => {
+  // Looks for the books based on id given in the request parameters and deletes the instance from the database
   Meal.destroy({
     where: {
-      name: req.params.name,
+      id: req.params.id,
     },
   })
     .then((deletedMeal) => {
