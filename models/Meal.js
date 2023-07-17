@@ -17,7 +17,10 @@ Meal.init(
         },
         menu_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            references: {
+                model: 'menu',
+                key: 'id',
+            }
         },
         filename: {
             type: DataTypes.STRING,
