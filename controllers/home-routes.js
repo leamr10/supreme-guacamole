@@ -40,7 +40,7 @@ router.get('/menu/:id', withAuth, async (req, res) => {
             'id',
             'name',
             'filename',
-            'edescription',
+            'description',
             'price',
           ],
         },
@@ -48,6 +48,7 @@ router.get('/menu/:id', withAuth, async (req, res) => {
     });
 
     const menu = dbMenuData.get({ plain: true });
+    console.log(menu);
     res.render('menu', { menu, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
@@ -57,7 +58,7 @@ router.get('/menu/:id', withAuth, async (req, res) => {
 
 // GET one meal
 // Use the custom middleware before allowing the user to access the meal
-router.get('/menu/:id', withAuth, async (req, res) => {
+router.get('/meal/:id', withAuth, async (req, res) => {
   try {
     const dbMealData = await Meal.findByPk(req.params.id);
 
