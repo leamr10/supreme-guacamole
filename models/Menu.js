@@ -11,15 +11,15 @@ Menu.init(
             autoIncrement: true,
             allowNull: false
         },
-        menu_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        title: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        time_offered: {
+            type: DataTypes.STRING,
+            allowNull: false,    
         }
-    },
+        },
     {
         sequelize,
         freezeTableName: true,
