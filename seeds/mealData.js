@@ -6,13 +6,13 @@ const mealdata = [
     name: 'The Classic',
     price: 7.50,
     menu_id: 1,
-    filename: 'the=classic.jpg',
+    filename: 'the-classic.jpg',
     description: 'Two eggs of your preferred style, a choice of bacon or sausage, as well as a choice of four pancakes or waffles.',
   },
   {
     id: 2,
     name: 'Country Fried Breakfast',
-    price: 9,
+    price: 9.00,
     menu_id: 1,
     filename: 'chicken-fried-steak.jpg',
     description: 'A country fried steak with two eggs of your preferred style with either diced potatoes or hash browns.',
@@ -20,7 +20,7 @@ const mealdata = [
   {
     id: 3,
     name: 'The Nick Foles',
-    price: 8,
+    price: 8.00,
     menu_id: 1,
     filename: 'nick-foles.jpg',
     description: 'Rocky Balboa would be proud. A Philly cheesesteak omelet with your choice of cheese and peppers, served with toast or a biscuit.',
@@ -52,9 +52,9 @@ const mealdata = [
   {
     id: 7,
     name: 'The Steak and Potatoes',
-    price: 23,
+    price: 23.00,
     menu_id: 3,
-    filename: 'steak-and=potatoes.jpeg',
+    filename: 'steak-and-potatoes.jpeg',
     description: "A beef steak served with a loaded baked potato and your choice of side salad or soup.",
   },
   {
@@ -90,7 +90,7 @@ const mealdata = [
   {
     id: 12,
     name: 'Sprite',
-    price: 2,
+    price: 2.00,
     menu_id: 4,
     filename: 'sprite.jpg',
   },
@@ -119,7 +119,7 @@ const mealdata = [
   {
     id: 16,
     name: 'Apple Pie',
-    price: 7,
+    price: 7.00,
     menu_id: 5,
     filename: 'apple-pie.jpg',
     description: 'A warm slice of apple pie with a scoop of vanilla ice cream to finish off your meal!',
