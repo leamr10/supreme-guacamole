@@ -111,6 +111,17 @@ router.put('/menu/:id', (req, res) => {
     .catch((err) => res.json(err));
 });
 
+router.get ('/confirm', (req, res) => {
+  
+}
+
+)
+
+router.get ('/invoice', (req, res) => {
+  
+}
+)
+
 router.delete('/menu/:id', (req, res) => {
   // Looks for the meals based on id given in the request parameters and deletes the instance from the database
   Meal.destroy({
