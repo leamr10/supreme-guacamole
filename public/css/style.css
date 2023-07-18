@@ -163,6 +163,12 @@
     align-items: center;
   }
 
+  @media screen and (max-width: 600px){
+    .container {
+      flex-direction: column;
+    }
+  }
+
   table {
     border-collapse: collapse;
   }
