@@ -3,8 +3,8 @@ function addToOrder () {
     const menuItems = JSON.parse(localStorage.getItem("menu-items")) || []
     menuItems.push(meal_id);
     localStorage.setItem("menu-items", JSON.stringify(menuItems));
-    document.location.href = "/confirm"
-}
+    document.location.href = "/confirm";
+};
 
 
 
