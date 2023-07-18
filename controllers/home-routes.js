@@ -58,12 +58,12 @@ router.get('/menu/:id', withAuth, async (req, res) => {
 
 // GET one meal
 // Use the custom middleware before allowing the user to access the meal
-router.get('/meal/:id', withAuth, async (req, res) => {
+router.get('/meal/:id', async (req, res) => {
   try {
     const dbMealData = await Meal.findByPk(req.params.id);
 
     const meal = dbMealData.get({ plain: true });
-
+    console.log('meal', meal);
     res.render('meal', { meal, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
@@ -118,7 +118,7 @@ router.get ('/confirm', (req, res) => {
 )
 
 router.get ('/invoice', (req, res) => {
-  
+
 }
 )
 
