@@ -8,6 +8,7 @@ Jake Barz
 Justin Martinez
 
 Project description:
+We were motivated to create a 
 
 
 Future development:
