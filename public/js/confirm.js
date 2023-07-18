@@ -3,7 +3,7 @@ function goBack () {
 }
 
 function checkout () {
-    document.location.href = "/invoice"
+    document.location.href = "/invoice";
 }
 
 
