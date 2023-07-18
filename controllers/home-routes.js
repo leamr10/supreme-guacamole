@@ -112,7 +112,7 @@ router.put('/menu/:id', (req, res) => {
 });
 
 router.delete('/menu/:id', (req, res) => {
-  // Looks for the books based on id given in the request parameters and deletes the instance from the database
+  // Looks for the meals based on id given in the request parameters and deletes the instance from the database
   Meal.destroy({
     where: {
       id: req.params.id,

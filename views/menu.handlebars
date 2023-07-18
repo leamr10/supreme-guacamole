@@ -4,13 +4,16 @@
   <section class="flex-row justify-center">
     {{#each menu.meals}}
     <section class="meal">
+        <input type="hidden" value="{{id}}">
   <img src="/images/{{filename}}" alt="{{description}}">
   <div class="meal-details">
     <h3>{{name}}</h3>
     <p>Price: {{price}}</p>
     <p> {{description}}</p>
   </div>
+  <button id="add-to-order">Add to Order</button>
 </section>
     {{/each}}
   </section>
 </section>
+<script src="/js/order.js" ></script>
