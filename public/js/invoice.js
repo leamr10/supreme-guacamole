@@ -1,4 +1,4 @@
-const menuItems = JSON.parse (localStorage.getItem("menu-item"));
+const menuItems = JSON.parse (localStorage.getItem("menu-item") || []);
 
 for (let i=0; i < menuItems.length; i++) {
     const newRow = document.createElement("tr");
