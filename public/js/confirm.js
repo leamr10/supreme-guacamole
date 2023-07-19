@@ -1,5 +1,6 @@
 function goBack () {
-    document.history.back()
+    history.back()
+    console.log("Test of Go Back");
 }
 
 function checkout () {
