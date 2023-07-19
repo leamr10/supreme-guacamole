@@ -1,4 +1,4 @@
-const menuItems = JSON.parse (localStorage.getItem("menu-item"));
+const menuItems = JSON.parse (localStorage.getItem("menu-item") || []);
 
 let html = ``
 
