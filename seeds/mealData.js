@@ -4,7 +4,7 @@ const mealdata = [
   {
     id: 1,
     name: 'The Classic',
-    price: 7.50,
+    price: 7.00,
     menu_id: 1,
     filename: 'the-classic.jpg',
     description: 'Two eggs of your preferred style, a choice of bacon or sausage, as well as a choice of four pancakes or waffles.',
@@ -28,7 +28,7 @@ const mealdata = [
   {
     id: 4,
     name: 'Simply Cheesy Burger',
-    price: 9.50,
+    price: 9.00,
     menu_id: 2,
     filename: 'simply-cheesy-burger.jpg',
     description: 'Just a well made burger with cheese, 100% USDA approved beef, pickles, tomatoes, lettuce and a side of fries.',
@@ -36,7 +36,7 @@ const mealdata = [
   {
     id: 5,
     name: 'Plato Wings',
-    price: 12.50,
+    price: 12.00,
     menu_id: 2,
     filename: 'platos-wings.jpeg',
     description: 'We will never know if the Greek philosopher liked wings, but six dry and six saucy wings were meant to be shared much like the teachings of Plato himself!',
@@ -44,7 +44,7 @@ const mealdata = [
   {
     id: 6,
     name: 'BLT Macaroni Salad',
-    price: 8.50,
+    price: 8.00,
     menu_id: 2,
     filename: 'blt-macaroni-salad.jpg',
     description: "It's a macaroni salad, it's a BLT, it's a combination BLT macaroni salad!",
@@ -60,7 +60,7 @@ const mealdata = [
   {
     id: 8,
     name: 'Pizza All Around!',
-    price: 18.50,
+    price: 18.00,
     menu_id: 3,
     filename: 'pizza-all-around.jpg',
     description: "Pizza for everyone! A 16 inch New York style pepperoni pizza for everyone to enjoy!",
@@ -68,7 +68,7 @@ const mealdata = [
   {
     id: 9,
     name: "Mama's Lasagna",
-    price: 14.50,
+    price: 14.00,
     menu_id: 3,
     filename: 'mamas-lasagna.jpg',
     description: "Lasagna so good it'll make you feel young again! Served with a side salad.",
@@ -83,7 +83,7 @@ const mealdata = [
   {
     id: 11,
     name: 'Coca-Cola',
-    price: 2,
+    price: 2.00,
     menu_id: 4,
     filename:'coca-cola.jpg',
   },
@@ -97,21 +97,21 @@ const mealdata = [
   {
     id: 13,
     name: 'Coffee',
-    price: 4.50,
+    price: 4.00,
     menu_id: 4,
     filename: 'coffee.jpg',
   },
   {
     id: 14,
     name: 'Sweet Tea',
-    price: 3.50,
+    price: 3.00,
     menu_id: 4,
     filename: 'sweet-tea.jpg',
   },
   {
     id: 15,
     name: 'Hot Fudge Cookie Sundae',
-    price: 7.50,
+    price: 7.00,
     menu_id: 5,
     filename: 'hot-fudge-cookie-sundae.jpg',
     description: 'Vanilla ice cream with hot fudge drizzled atop pecans, a chocolate chip cookie and topped off with a cherry!', 
