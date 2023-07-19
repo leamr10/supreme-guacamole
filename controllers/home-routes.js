@@ -112,7 +112,6 @@ router.put('/menu/:id', (req, res) => {
 });
 
 router.get ('/confirm', (req, res) => {
-  console.log('Here in the confirm route');
   
   res.render('confirm', {
     loggedIn: req.session.loggedIn,
@@ -122,8 +121,10 @@ router.get ('/confirm', (req, res) => {
 
 router.get ('/invoice', (req, res) => {
 
-}
-)
+  res.render('invoice', {
+    loggedIn: req.session.loggedIn,
+  });
+});
 
 router.delete('/menu/:id', (req, res) => {
   // Looks for the meals based on id given in the request parameters and deletes the instance from the database
