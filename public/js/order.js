@@ -1,7 +1,8 @@
-function addToOrder () {
-    const meal_id = document.querySelector("input").value;
+function addToOrder (target) {
+    const meal_id = target.parentElement.querySelector("input").value;
+    const price = target.parentElement.querySelector("price").value;
     const menuItems = JSON.parse(localStorage.getItem("menu-items")) || []
-    menuItems.push(meal_id);
+    menuItems.push(meal_id, price);
     localStorage.setItem("menu-items", JSON.stringify(menuItems));
     document.location.href = "/confirm";
 };
@@ -12,4 +13,8 @@ function addToOrder () {
 
 
 
-document.getElementById("add-to-order").addEventListener("click", addToOrder);
+document.querySelector(".meal-container").addEventListener("click", function(event){
+    if (event.target.id ==="add-to-order"){
+        addToOrder(event.target);
+    }
+});

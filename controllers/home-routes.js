@@ -87,7 +87,7 @@ router.post('/seed', (req, res) => {
 });
 
 // Updates meal based on its id
-router.put('/menu/:id', (req, res) => {
+router.put('/meal/:id', (req, res) => {
   // Calls the update method on the Book model
   Meal.update(
     {
@@ -126,7 +126,7 @@ router.get ('/invoice', (req, res) => {
   });
 });
 
-router.delete('/menu/:id', (req, res) => {
+router.delete('/meal/:id', (req, res) => {
   // Looks for the meals based on id given in the request parameters and deletes the instance from the database
   Meal.destroy({
     where: {
