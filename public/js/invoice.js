@@ -14,4 +14,3 @@ for (let i = 0; i < menuItems.length/2; i++) {
 }
 console.log(totalPrice);
 totalPriceEl.textContent = totalPrice;
-
