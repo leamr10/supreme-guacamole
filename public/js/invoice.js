@@ -1,11 +1,11 @@
 const menuItems = JSON.parse (localStorage.getItem("menu-item"));
 
-let html = ``
+for (let i=0; i < menuItems.length; i++) {
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = 
+    `<td>${menuItems[i].name}</td>
+     <td>${menuItems[i].price}</td>
+    `;
 
-for (i=0; i < menuItems.length; i++) {
-    html += ``
+document.querySelector('#invoice-table').appendChild(newRow);
 }
-
-
-
-// document.querySelector(tablename).innerHTML= html;
