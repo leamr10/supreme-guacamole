@@ -1,6 +1,6 @@
 function addToOrder (target) {
     const meal_id = target.parentElement.querySelector("input").value;
-    const price = target.parentElement.querySelector("price").value;
+    const price = target.parentElement.querySelector("#price").getAttribute("value");
     const menuItems = JSON.parse(localStorage.getItem("menu-items")) || []
     menuItems.push(meal_id, price);
     localStorage.setItem("menu-items", JSON.stringify(menuItems));
