@@ -112,10 +112,13 @@ router.put('/menu/:id', (req, res) => {
 });
 
 router.get ('/confirm', (req, res) => {
+  console.log('Here in the confirm route');
   
-}
+  res.render('confirm', {
+    loggedIn: req.session.loggedIn,
+  });
 
-)
+});
 
 router.get ('/invoice', (req, res) => {
 
