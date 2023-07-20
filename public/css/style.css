@@ -187,3 +187,7 @@
   font-weight: bold;
   justify-content: center;
 }
+
+#invoice-table {
+  width: 400px;
+}
