@@ -1,7 +1,7 @@
-const {Model, DataTypes} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Menu extends Model {}
+class Menu extends Model { }
 
 Menu.init(
     {
@@ -17,9 +17,9 @@ Menu.init(
         },
         time_offered: {
             type: DataTypes.STRING,
-            allowNull: false,    
+            allowNull: false,
         }
-        },
+    },
     {
         sequelize,
         freezeTableName: true,
