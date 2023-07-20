@@ -22,6 +22,6 @@ A lot can be done in future development as it can be synced up with food deliver
 
 
 
-The deployed URL can be found here: 
+The deployed URL can be found here: https://ancient-cove-48096-c1c1d1e494f0.herokuapp.com/
 
-A screen capture of the home page can be found here:
+A screen capture of the home page can be found here: ![screencapture-localhost-3001-2023-07-20-11_10_12](https://github.com/leamr10/supreme-guacamole/assets/133124800/1ef15c64-058f-4f41-94d9-3a91ea445b79)
