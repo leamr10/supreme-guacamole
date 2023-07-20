@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
 
 // GET one menu
 // Use the custom middleware before allowing the user to access the menu
-router.get('/menu/:id', async (req, res) => {
+router.get('/menu/:id', withAuth, async (req, res) => {
   try {
     const dbMenuData = await Menu.findByPk(req.params.id, {
       include: [
@@ -57,7 +57,7 @@ router.get('/menu/:id', async (req, res) => {
 
 // GET one meal
 // Use the custom middleware before allowing the user to access the meal
-router.get('/meal/:id', async (req, res) => {
+router.get('/meal/:id', withAuth, async (req, res) => {
   try {
     const dbMealData = await Meal.findByPk(req.params.id);
 
