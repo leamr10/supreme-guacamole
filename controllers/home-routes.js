@@ -73,7 +73,7 @@ router.get('/meal/:id', async (req, res) => {
 
 // CREATE a meal
 router.post('/seed', (req, res) => {
-   Meal.create({
+  Meal.create({
     name: req.body.name,
     description: req.body.description,
     price: req.body.price,
@@ -111,15 +111,15 @@ router.put('/meal/:id', (req, res) => {
     .catch((err) => res.json(err));
 });
 
-router.get ('/confirm', (req, res) => {
-  
+router.get('/confirm', (req, res) => {
+
   res.render('confirm', {
     loggedIn: req.session.loggedIn,
   });
 
 });
 
-router.get ('/invoice', (req, res) => {
+router.get('/invoice', (req, res) => {
 
   res.render('invoice', {
     loggedIn: req.session.loggedIn,
