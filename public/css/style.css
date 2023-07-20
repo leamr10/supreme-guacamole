@@ -1,4 +1,4 @@
-
+:root {
     --primary: #3d5852;
     --secondary: #86938f;
     --tertiary: #5e877f;
@@ -159,14 +159,17 @@
   
   /* LAYOUT */
   .container {
-    flex-direction: column;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: center;
   }
-}
 
-table {
-  border-collapse: collapse;
-}
-
+  @media screen and (max-width: 600px){
+    .container {
+      flex-direction: column;
+    }
+  }
 
   table {
     border-collapse: collapse;
