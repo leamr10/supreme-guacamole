@@ -48,7 +48,6 @@ router.get('/menu/:id', async (req, res) => {
     });
 
     const menu = dbMenuData.get({ plain: true });
-    console.log(menu);
     res.render('menu', { menu, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
@@ -63,7 +62,6 @@ router.get('/meal/:id', async (req, res) => {
     const dbMealData = await Meal.findByPk(req.params.id);
 
     const meal = dbMealData.get({ plain: true });
-    console.log('meal', meal);
     res.render('meal', { meal, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
