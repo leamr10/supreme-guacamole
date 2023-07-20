@@ -12,5 +12,4 @@ for (let i = 0; i < menuItems.length/2; i++) {
     newRow.appendChild(priceEl);
     document.querySelector('#invoice-table').appendChild(newRow);
 }
-console.log(totalPrice);
 totalPriceEl.textContent = 'Total: $' + totalPrice;
