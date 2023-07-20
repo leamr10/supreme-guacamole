@@ -33,6 +33,7 @@
     text-align: center;
     background: var(--primary);
     color: var(--light);
+    font-size: 250%;
   }
   
   main {
@@ -47,6 +48,7 @@
     padding: 80px;
     text-align: left;
     color: var(--light);
+    font-size: 150%;
   }
   
   nav {
@@ -177,3 +179,11 @@
     border: 1px solid black;
     padding: 10px 20px;
   }
+
+#order-add {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 150%;
+  font-weight: bold;
+  justify-content: center;
+}
